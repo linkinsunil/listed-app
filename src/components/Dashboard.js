@@ -15,8 +15,6 @@ import CaretIcon from '../assets/CaretIcon';
 import Schedule from './Schedule';
 import { scheduleData } from '../assets/scheduleData';
 
-const colors = ['#98D89E', '#F6DC7D', '#EE8484'];
-
 const Dashboard = () => {
   return (
     <div className='bg-[#f5f5f5] p-10 w-screen h-full flex App'>
@@ -115,6 +113,7 @@ const Dashboard = () => {
                 time={schedule.time}
                 venue={schedule.venue}
                 index={index}
+                key={index}
               />
             ))}
           </div>
